@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thank You</title>
+    <style>
+      body {
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        flex-direction: column;
+      }
+      h1,
+      p {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+      }
+      h1 {
+        color: white;
+      }
+      p {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+      <main>
+        <h1>Thank You For Regestration!!!</h1>
+        <p id="para">Your regestration number is 20000</p>
+      </body>
+      </main>
+    
+  <script>
+    let regNum = Math.floor(Math.random() * 10000) + 1;
+    document.getElementById(
+      "para"
+    ).innerText = `Your Regestration number is ${regNum}`;
+  </script>
+</html>
